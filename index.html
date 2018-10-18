@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete Trie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="text" v-model="searchTerm" placeholder="Start typing..." />
+      <ol>
+        <li v-for="term in filteredTerms">
+          {{ term }}
+        </li>
+      </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
