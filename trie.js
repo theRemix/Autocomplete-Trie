@@ -15,10 +15,18 @@
  *   - see check()
  */
 
+/*
+ * Write an algorithm that builds a trie structure from a dictionary
+ *   during development, use `node test/create`
+ */
 const create = dictionary => {
 
 }
 
+/*
+ * Write an algorithm that builds a trie structure from a dictionary
+ *   during development, use `node test/check`
+ */
 const check = query => {
 
   return {};
