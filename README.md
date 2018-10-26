@@ -6,7 +6,6 @@ Trie data structure exercise
 ## Dictionary
 
 The dataset is a giant json document that looks like this
-
 ```json
 {
   "predominance" : {
@@ -33,8 +32,34 @@ The dataset is a giant json document that looks like this
   }
 }
 ```
+## Working on the exercise
 
-### Utils
+Review the code in `./test/` directory to understand how your functions will be used.
+
+Do all your work in `./trie.js`, more explanations will be in that module.
+
+### trie.create
+
+Work on this first. This function will take in a dictionary, and output a trie data structure.
+
+Check your work on a small sample dictionary using `npm run test:create`
+Alternatively, you can use [`nodemon`](https://www.npmjs.com/package/nodemon) for rapid development: `npx nodemon test/create`
+
+See [./test/sample-dictionary.json](./test/sample-dictionary.json) for an example.
+
+
+### trie.check
+
+Work on this next. `trie.check` relies on `trie.create`. This function will take in a dictionary, and output a trie data structure.
+
+Check your work on a small sample dictionary using `npm run test:create`
+Alternatively, you can use [`nodemon`](https://www.npmjs.com/package/nodemon) for rapid development: `npx nodemon test/create`
+
+
+See [./test/sample-trie.json](./test/sample-trie.json) for an example.
+
+
+## Utils
 
 These scripts are meant to be run in the `data/` directory from this repo [github.com/wordset/wordset-dictionary](https://github.com/wordset/wordset-dictionary)
 

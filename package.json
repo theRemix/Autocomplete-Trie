@@ -1,0 +1,31 @@
+{
+  "name": "autocomplete-trie",
+  "version": "1.0.0",
+  "description": "Exercise for learning Trie data structure and algorithms",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test",
+    "test:create": "node test/create",
+    "test:check": "node test/check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theRemix/Autocomplete-Trie.git"
+  },
+  "keywords": [
+    "exercise",
+    "trie",
+    "data",
+    "structures",
+    "algorithms"
+  ],
+  "author": "Jon Borgonia <jon@gomagames.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theRemix/Autocomplete-Trie/issues"
+  },
+  "homepage": "https://github.com/theRemix/Autocomplete-Trie#readme"
+}

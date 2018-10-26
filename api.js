@@ -1,5 +1,12 @@
 const { check } = require('./trie');
 
+/*
+ * On api request
+ *   - GET /api/check-term?q=fluo
+ *   - returns
+ *     - { value, childKeys }
+ *   - see trie.check()
+ */
 const checkTerm = (req, res) => {
   const query = req.url.split('?q=')[1];
   res.end(JSON.stringify(check(query)));
