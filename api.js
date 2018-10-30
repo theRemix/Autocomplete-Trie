@@ -12,7 +12,6 @@ const loadData = async() => {
   console.log('Creating Trie...');
   console.time('Trie is ready!');
   trie = create( dictionary );
-  console.log(Object.keys(trie), Object.keys(trie.children) )
   console.timeEnd('Trie is ready!');
 }
 
