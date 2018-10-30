@@ -1,0 +1,55 @@
+{
+  "value": null,
+  "children": {
+    "c": {
+      "value": null,
+      "children": {
+        "a": {
+          "value": null,
+          "children": {
+            "t": {
+              "value": {
+                "definition": "definition for cat"
+              },
+              "children": {
+                "e": {
+                  "value": null,
+                  "children": {
+                    "r": {
+                      "value": {
+                        "definition": "definition for cater"
+                      },
+                      "children": {}
+                    }
+                  }
+                }
+              }
+            },
+            "p": {
+              "value": {
+                "definition": "definition for cap"
+              },
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    "d": {
+      "value": null,
+      "children": {
+        "o": {
+          "value": null,
+          "children": {
+            "g": {
+              "value": {
+                "definition": "definition for dog"
+              },
+              "children": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

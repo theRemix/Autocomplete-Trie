@@ -1,62 +1,14 @@
 {
   "cat": {
-    "word": "cat",
-    "wordset_id": "1",
-    "meanings": [
-      {
-        "id": "11",
-        "def": "",
-        "speech_part": "noun",
-        "synonyms": []
-      }
-    ]
+    "definition": "definition for cat"
   },
-  "catalog": {
-    "word": "catalog",
-    "wordset_id": "2",
-    "meanings": [
-      {
-        "id": "21",
-        "def": "",
-        "speech_part": "noun",
-        "synonyms": []
-      }
-    ]
-  },
-  "catch": {
-    "word": "catch",
-    "wordset_id": "3",
-    "meanings": [
-      {
-        "id": "31",
-        "def": "",
-        "speech_part": "verb",
-        "synonyms": []
-      }
-    ]
+  "cater": {
+    "definition": "definition for cater"
   },
   "cap": {
-    "word": "cap",
-    "wordset_id": "4",
-    "meanings": [
-      {
-        "id": "41",
-        "def": "",
-        "speech_part": "noun",
-        "synonyms": []
-      }
-    ]
+    "definition": "definition for cap"
   },
   "dog": {
-    "word": "dog",
-    "wordset_id": "5",
-    "meanings": [
-      {
-        "id": "51",
-        "def": "",
-        "speech_part": "noun",
-        "synonyms": []
-      }
-    ]
+    "definition": "definition for dog"
   }
 }
