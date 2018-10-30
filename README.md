@@ -61,6 +61,8 @@ See [./test/sample-trie.json](./test/sample-trie.json) for an example.
 
 ## Utils
 
+Utilities for curriculum developers.
+
 These scripts are meant to be run in the `data/` directory from this repo [github.com/wordset/wordset-dictionary](https://github.com/wordset/wordset-dictionary)
 
 ```sh
