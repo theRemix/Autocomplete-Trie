@@ -1,7 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const { join } = require('path');
-const apiHandler = require('./api');
+const { loadData, apiHandler } = require('./api');
 const apiMountpath = '/api/';
 const staticDir = './static';
 const PORT = process.env.PORT || 3000;
@@ -19,8 +19,13 @@ const staticHandler = (req, res) => {
 
 const requestHandler = (req, res) => (req.url.startsWith(apiMountpath) ? apiHandler(apiMountpath) : staticHandler)(req, res);
 
-http.createServer(requestHandler).listen(PORT, (err) => {
-  if (err) return console.log(err)
+(async () => {
+  await loadData();
 
-  console.log(`Server is listening on ${PORT}`);
-});
+  http.createServer(requestHandler).listen(PORT, (err) => {
+    if (err) return console.log(err)
+
+    console.log(`Server is listening on ${PORT}`);
+  });
+
+})();

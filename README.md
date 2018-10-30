@@ -33,6 +33,14 @@ See [./test/sample-trie.json](./test/sample-trie.json) for an example.
 
 Run `npm test` and make sure the output is `"OK!"`
 
+## Running the app
+
+This should only be done when tests pass.
+
+Run `npm start` to run the demo app.
+
+`open localhost:3000` to launch and interact with it.
+
 ## Dictionary
 
 The dataset is a giant json document that looks like this

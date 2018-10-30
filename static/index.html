@@ -8,14 +8,32 @@
 
   <body>
     <div id="app">
-      <input type="text" v-model="searchTerm" placeholder="Start typing..." />
-      <ol>
-        <li v-for="term in filteredTerms">
-          {{ term }}
-        </li>
-      </ol>
+      <input type="text" v-model="query" placeholder="Start typing..." />
+
+      <p v-if="result === false">Word not found</p>
+
+      <p v-if="result === true">&ldquo;{{ query }}&rdquo; is not a word yet. Keep typing...</p>
+
+      <div v-if="result !== null && result !== true && result !== false">
+        <dl class="word-result">
+          <dt class="word-label">{{ result.word }}</dt>
+          <dd class="word-meaning" v-for="meaning in result.meanings">
+            <dl class="meaning">
+              <dt class="meaning-speech-part">{{ meaning.speech_part }}</dt>
+              <dd class="meaning-def">{{ meaning.def }}</dd>
+              <dt class="meaning-synonym-label" v-if="meaning.synonyms">Synonyms</dt>
+              <dd class="meaning-synonyms" v-if="meaning.synonyms">{{ meaning.synonyms.join(', ') }}</dd>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue-http@2.0.5/dist/index.js"></script> -->
+    <script src="https://unpkg.com/vue-async-computed@3.4.1/dist/vue-async-computed.js"></script>
+
     <script src="./js/app.js"></script>
   </body>
 </html>

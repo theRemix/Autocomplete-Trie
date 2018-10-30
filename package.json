@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "node .",
     "test": "node test",
     "test:create": "node test/create",
     "test:check": "node test/check"
