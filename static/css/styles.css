@@ -1,0 +1,64 @@
+body{
+  padding: 50px 30px;
+}
+
+#app > p{
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+input[type="text"]{
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus{
+  outline: none;
+  background-color: #FDFFE6;
+  box-shadow: none;
+  border: 1px solid #AAAAAA;
+}
+
+dl.word-result{
+  max-width: 500px;
+  margin: auto;
+}
+
+dt.word-label{
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+dt.word-label:after{
+  content: ":";
+}
+
+dd.word-meaning{
+  border: 1px solid #DDDDDD;
+  padding: 20px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+dt.meaning-speech-part{
+  font-style: italic;
+  color: #AAAAAA;
+}
+
+dt.meaning-synonym-label{
+  margin-top: 15px;
+}
+
+dt.meaning-synonym-label:after{
+  content: ":";
+}
