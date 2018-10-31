@@ -33,6 +33,18 @@ See [./test/sample-trie.json](./test/sample-trie.json) for an example.
 
 Run `npm test` and make sure the output is `"OK!"`
 
+### stretch goals
+
+When all tests pass, see if you can add some features.
+
+**trie.create** write a `trie.add()` function that adds a word to the trie
+
+**trie.create** write a `trie.remove()` function that removes a word from the trie
+
+**trie.check** adjust it to also decorate the `node.value` with `node.suggestions` which returns an array of possible words that are one level deep in the node's children.
+
+**trie.check** memoize the function to cache results which will make walking a down the trie faster.
+
 ## Running the app
 
 This should only be done when tests pass.
