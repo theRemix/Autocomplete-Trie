@@ -6,7 +6,7 @@
  * returns trie data structure
  *
  * check()
- * taske a trie and a query
+ * takes a trie and a query
  * returns a result from querying the trie
  *
  * you should not alter the arguments for create or check
@@ -37,10 +37,10 @@ const create = dictionary => {
  *   it may be more convenient to use nodemon `npx nodemon test/check`
  *
  * parameters:
- *   @trie         an Trie structure containing all words in a dictionary
+ *   @trie         a Trie structure containing all words in a dictionary
  *                 see ./test/sample-trie.json for the object shape
  *
- *   @query        an String input to check the trie for existing nodes
+ *   @query        a String input to check the trie for existing nodes
  *
  * returns:
  *   @result that is one of:
