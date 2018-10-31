@@ -21,7 +21,7 @@ See [./test/sample-dictionary.json](./test/sample-dictionary.json) for an exampl
 
 ### trie.check
 
-Work on this next. `trie.check` relies on `trie.create`. This function will take in a dictionary, and output a trie data structure.
+Work on this next. `trie.check` relies on `trie.create`. This function will take in a trie data structure and a query, and output a result.
 
 Check your work on a small sample dictionary using `npm run test:create`
 Alternatively, you can use [`nodemon`](https://www.npmjs.com/package/nodemon) for rapid development: `npx nodemon test/create`
