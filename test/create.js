@@ -3,7 +3,7 @@ const { create } = require('../trie');
 const sampleDictionary = require('./sample-dictionary');
 const sampleTrie = require('./sample-trie');
 
-const trie = create(sampleDictionary);
+const trie = JSON.parse(JSON.stringify(create(sampleDictionary)));
 
 console.log( JSON.stringify(trie, null, 2) );
 
