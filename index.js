@@ -7,6 +7,11 @@ const staticDir = './static';
 const PORT = process.env.PORT || 3000;
 
 const staticHandler = (req, res) => {
+    if (path.normalize(req.url) !== req.url) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
   const path = join(staticDir, req.url === '/' ? '/index.html' : req.url);
 
   const file = fs.createReadStream(path);
